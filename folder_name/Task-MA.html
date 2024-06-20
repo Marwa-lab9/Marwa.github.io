@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> خدمة العملاء</title>
+    <title> خدمة العملاء </title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
@@ -48,7 +48,6 @@
             display: block;
             margin: 0 auto 20px;
             width: 80px;
-            animation: rotate 3s linear infinite;
         }
 
         .form-group {
@@ -70,6 +69,7 @@
             border-radius: 5px;
             font-size: 1em;
             color: #333;
+            direction: rtl;
         }
 
         .form-group textarea {
@@ -135,6 +135,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             margin-bottom: 5px;
+            direction: rtl;
         }
 
         .form-feedback {
@@ -155,7 +156,7 @@
         }
 
         .text-container {
-            background-color: rgb(95, 107, 139);
+            background-color: rgb(82, 89, 108);
             padding: 7px;
             font-size: 17px;
             color: white;
@@ -170,10 +171,10 @@
 
 <body>
     <div class="form-container">
-        <img src="misk-logo-c-h" alt="شعار" id="logo">
+        <img src="White and Black Minimal Letter SA Architect Company Logo" alt="شعار" id="logo">
         <h2>تواصل معنا</h2>
         <p>
-            <h4> نحن نعمل باستمرار لجعل تجربتك أسهل. سنقوم بالرد على رسالتكم خلال 24 ساعه</h4>
+            <h4> نحن نعمل باستمرار لجعل تجربتك أسهل, سنقوم بالرد على رسالتكم خلال 24 ساعه</h4>
         
         
         </p>
@@ -191,7 +192,7 @@
             </div>
             <div class="form-group">
                 <label for="phone">رقم الهاتف</label>
-                <input type="tel" id="phone" name="phone" placeholder="+966********" required pattern="^\d{10}$">
+                <input type="tel" id="phone" name="phone" required pattern="^\d{10}$">
                 <div class="form-feedback" id="phoneFeedback"></div>
             </div>
             <div class="form-group">
@@ -228,7 +229,7 @@
             </div>
         </form>
         <div class="success-message" id="successMessage">
-            تم إرسال رسالتك بنجاح. شكرًا لتواصلك معنا!
+            تم إرسال رسالتك بنجاح , شكرًا لتواصلك معنا!
         </div>
         <div class="text-container">
             <p>من نحن</p>
@@ -238,6 +239,8 @@
         </div>
     </div>
 
+
+    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('customer-form');
